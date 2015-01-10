@@ -1,0 +1,27 @@
+{
+  "name": "react-state-router",
+  "version": "0.1.0",
+  "description": "State based router for React JS.",
+  "main": "StateRouter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "router"
+  ],
+  "author": {
+    "name": "Wiktor Kozlik",
+    "email": "wiktor@rocketmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiktor256/react-state-router.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.12.2",
+    "safe-access": "^0.1.0",
+    "urllite": "^0.5.0"
+  }
+}
