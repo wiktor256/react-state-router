@@ -30,7 +30,7 @@ var PageSidebar = React.createClass({
   mixins: [StateRouterMixin],
   getInitialState: function() {
     return {
-      menu: [mailbox', 'contacts']
+      menu: ['mailbox', 'contacts']
     };
   },
   handleMenuItem: function(menuItem) {
