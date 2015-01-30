@@ -60,6 +60,31 @@ var PageSidebar = React.createClass({
 
 module.exports = PageSidebar;
 ```
+
+PageContent.jsx
+
+```javascript
+var React = require('react');
+var MailBoxPage = require('./MailBoxPage.jsx');
+var ContactsPage = require('./ContactsPage.jsx');
+var StateRouterMixin = require('react-state-router/StateRouterMixin');
+
+var PageContent = React.createClass({
+  mixins: [StateRouterMixin],
+  render: function() {
+    var page = this.getRouterState().page;
+    if (page === 'mailbox') {
+      return <MailBoxPage/>;
+    }
+    else if (page === 'contacts') {
+      return <ContactsPage/>;
+    }
+  }
+});
+
+module.exports = PageContent;
+```
+
 Application needs to initialize StateRouter.
 
 App.jsx
