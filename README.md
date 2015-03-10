@@ -24,7 +24,7 @@ PageSidebar.jsx
 
 ```javascript
 var React = require('react');
-var StateRouterMixin = require('react-state-router/StateRouterMixin');
+var { StateRouterMixin } = require('react-state-router');
 
 var PageSidebar = React.createClass({
   mixins: [StateRouterMixin],
@@ -67,7 +67,7 @@ PageContent.jsx
 var React = require('react');
 var MailBoxPage = require('./MailBoxPage.jsx');
 var ContactsPage = require('./ContactsPage.jsx');
-var StateRouterMixin = require('react-state-router/StateRouterMixin');
+var { StateRouterMixin } = require('react-state-router');
 
 var PageContent = React.createClass({
   mixins: [StateRouterMixin],
@@ -91,7 +91,7 @@ App.jsx
 
 ```javascript
 var React = require('react');
-var StateRouter = require('react-state-router');
+var { StateRouter } = require('react-state-router');
 var PageSidebar = require('./PageSidebar.jsx');
 var PageContent = require('./PageContent.jsx');
 
@@ -140,8 +140,7 @@ PageContent.jsx
 var React = require('react');
 var MailBoxPage = require('./MailBoxPage.jsx');
 var ContactsPage = require('./ContactsPage.jsx');
-var StateRouterView = require('react-state-router/StateRouterView.jsx');
-var StateRouterMixin = require('react-state-router/StateRouterMixin');
+var { StateRouterView, StateRouterMixin } = require('react-state-router');
 
 var PageContent = React.createClass({
   mixins: [StateRouterMixin],
