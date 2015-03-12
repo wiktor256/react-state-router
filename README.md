@@ -96,7 +96,7 @@ var PageSidebar = require('./PageSidebar.jsx');
 var PageContent = require('./PageContent.jsx');
 
 var App = React.createClass({
-  componentDidMount: function() {
+  componentWillMount: function() {
     StateRouter.init({
       rootComponent: this
     });
